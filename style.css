@@ -1,0 +1,216 @@
+body {
+	 margin:0;
+	 padding: 0;
+}
+
+.home {
+	background-image: url("images/nature.jpg");
+	background-size: cover;
+	width: 99vw;
+	height: 48vw;
+}
+
+.container{ 
+	padding-top: 30px;
+	padding-left: 30px; 
+}
+
+article {
+	height: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/*.fixe{
+	position: fixed;
+}*/
+
+.menu > a{
+	text-decoration: none;
+	color: #fefefe;
+	margin-top: 400px;
+	font-size: 30px;
+	margin-right: 10px;
+	border-right: 2px solid black;
+	padding-right: 10px;
+}
+
+.logo {
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.descriptif {
+	position: relative;
+	top: 200px;
+	left: 500px;
+	width: 700px;
+}
+
+.descriptif > h1{
+	font-size: 60px;
+	color: #fefefe;
+	text-align: center;
+	position: relative;
+	top: 170px;
+}
+
+.descriptif > p {
+	text-align: center;
+	color: #fefefe;
+	font-size: 30px;
+	position: relative;
+	top: 190px;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	width: 8%;
+	margin-left:180%; 
+}
+
+.icon > a > img {
+	width: 40px;
+	height: 40px;
+	padding-bottom: 10px;
+}
+
+
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	height: 500px;
+	padding-top: 50px;
+}
+
+.services > .section-service {
+	padding: 60px;
+}
+
+.button-service {
+	margin-top: 20px;
+	background: #fefefe;
+	border-radius: 4px;
+	width: 150px;
+	height: 30px;
+}
+
+.about-us, .formulaire {
+	background:#D7E3EB;
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+}
+
+.slider {
+	overflow: hidden;
+	width:700px;
+	height: 383px;
+}
+
+.slides {
+	width: calc(700px * 3);
+	display: flex;
+	flex-direction: row;
+	animation: glisse 10s infinite;
+}
+
+@keyframes glisse {
+	/*position de base est à 0*/
+	0% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(-700px);
+	}
+	70% {
+		transform: translateX(-1400px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+.img-slide {
+	width: 600px;
+}
+
+.presentation {
+	width: 900px;
+	padding-right: 50px; 
+}
+.presentation > p{
+	font-size:20px;
+	padding: 5px;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 60px;
+	height: 530px
+}
+form {
+	margin-left: 30%;
+	margin-right:30%;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+.formul {
+	padding-bottom: 60px;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	margin-top: 40px;
+	color: #D7E3EB;
+	background: black;
+	border-radius: 5px;
+	margin-left: 73%;
+	font-size: 25px;
+}
+input, textarea {
+	width: 600px;
+	height: 50px;
+}
+h2 {
+	text-align: left;
+	font-size: 40px;
+}
+.fomulaire {
+	display: flex;
+	justify-content: center;
+}
+
+.footer {
+	background: black;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+.footer_para {
+	width: 500px;
+}
+
+.réso_social{
+	margin-left: 30px;
+}
+
+.social_footer {
+	width: 300px;
+	
+}
+
+.titre_footer {
+	font-size: 25px;
+}
